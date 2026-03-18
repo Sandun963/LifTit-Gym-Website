@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Root Theme ===== */
+:root {
+  --color-primary: rgb(213, 163, 16);
+  --color-light: rgb(241, 240, 235);
+  --color-dark: rgb(41, 33, 19);
+  --color-black: rgb(4, 3, 4);
+  --color-gray: rgb(44, 44, 44);
+}
+
+/* ===== Body Styling ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-light);
+  color: var(--color-black);
+  line-height: 1.6;
+}
+
+/* ===== Container Fix ===== */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ===== Smooth Scroll ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Reusable Components (Tailwind Layer) ===== */
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-black px-6 py-3 rounded-lg font-semibold transition duration-300;
+  }
+
+  .btn-primary:hover {
+    @apply opacity-90 scale-105;
+  }
+
+  .section {
+    @apply py-16 px-6 md:px-12;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-6 text-black;
+  }
+
+  .container-custom {
+    @apply max-w-6xl mx-auto;
+  }
+}

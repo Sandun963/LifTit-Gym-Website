@@ -32,6 +32,11 @@ body {
   min-height: 100vh;
 }
 
+/*===== Hover Burton ===== */
+button:hover {
+  box-shadow: 0 0 15px rgba(213, 163, 16, 0.5);
+}
+
 /* ===== Smooth Scroll ===== */
 html {
   scroll-behavior: smooth;

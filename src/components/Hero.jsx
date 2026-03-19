@@ -45,9 +45,9 @@ export default function Hero() {
           Train with the best equipment and expert coaches
         </p>
 
-        <button className="bg-primary text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
+        {/* <button className="bg-primary text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
           Join Now
-        </button>
+        </button> */}
       </div>
     </section>
   );

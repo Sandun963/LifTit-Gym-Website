@@ -16,6 +16,9 @@
   --color-dark: rgb(41, 33, 19);
   --color-black: rgb(4, 3, 4);
   --color-gray: rgb(44, 44, 44);
+
+  /* ✅ Navbar height (single source of truth) */
+  --navbar-height: 80px;
 }
 
 /* ===== Body Styling ===== */
@@ -24,6 +27,9 @@ body {
   background-color: var(--color-light);
   color: var(--color-black);
   line-height: 1.6;
+
+  /* ✅ Prevent content under navbar */
+  padding-top: var(--navbar-height);
 }
 
 /* ===== Container Fix ===== */
@@ -32,7 +38,7 @@ body {
   min-height: 100vh;
 }
 
-/*===== Hover Burton ===== */
+/* ===== Button Hover Effect ===== */
 button:hover {
   box-shadow: 0 0 15px rgba(213, 163, 16, 0.5);
 }
@@ -42,7 +48,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ===== Reusable Components (Tailwind Layer) ===== */
+/* ✅ Fix section scroll under navbar */
+section {
+  scroll-margin-top: var(--navbar-height);
+}
+
+/* ===== Reusable Components ===== */
 @layer components {
   .btn-primary {
     @apply bg-primary text-black px-6 py-3 rounded-lg font-semibold transition duration-300;

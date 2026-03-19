@@ -44,10 +44,6 @@ export default function Hero() {
         <p className="mb-8 text-lg md:text-xl text-gray-300">
           Train with the best equipment and expert coaches
         </p>
-
-        {/* <button className="bg-primary text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
-          Join Now
-        </button> */}
       </div>
     </section>
   );

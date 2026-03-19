@@ -1,16 +1,111 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏋️ LifTit – Fitness Gym Website
 
-Currently, two official plugins are available:
+## 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+LifTit is a modern, responsive fitness gym website designed to provide users with a premium digital experience. It includes sections for services, membership plans, and a contact form, along with a simulated payment flow.
 
-## React Compiler
+This project was developed as part of a web development assessment.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 liftit-gym.vercel.app
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React (Vite)
+* **Styling:** Tailwind CSS
+* **Routing:** React Router
+* **Icons:** React Icons
+* **Deployment:** Vercel
+
+---
+
+## ✨ Features
+
+* Responsive modern UI design
+* Hero section with image slideshow
+* About section with animated image carousel
+* Services section with icons and descriptions
+* Membership pricing plans with highlight feature
+* Checkout page with simulated payment form
+* Contact form with validation and success feedback
+* Smooth scrolling navigation
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Sandun963/LifTit-Gym-Website.git
+cd gym
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+ ├── components/
+ │   ├── Navbar.jsx
+ │   ├── Hero.jsx
+ │   ├── About.jsx
+ │   ├── Services.jsx
+ │   ├── Pricing.jsx
+ │   ├── ContactForm.jsx
+ │
+ ├── pages/
+ │   ├── Home.jsx
+ │   ├── Checkout.jsx
+ │
+ ├── assets/
+ │   ├── images...
+ │
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## 💳 Payment Note
+
+The payment flow is currently simulated for demonstration purposes. In a production environment, this would be integrated with a secure payment gateway such as Stripe.
+
+---
+
+## 📬 Contact
+
+If you have any questions or feedback, feel free to reach out.
+
+---
+
+## ⭐ Acknowledgment
+
+This project was built as part of an internship assessment to demonstrate frontend development skills, UI design, and user experience considerations.
+
+---
